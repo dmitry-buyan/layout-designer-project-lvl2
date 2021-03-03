@@ -4,11 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Портал «Music Box» | Dmitry Buyan</title>
-
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Портал «Music Box» - Главная | Dmitry Buyan</title>
+    <link rel="preload" href="fonts/Roboto-Bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="main">
+  <div style="display: none;">
+    <include src="build/images/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <a class="main-nav-logo">
+      <svg class="social-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+        <use xlink:href="#logo"></use>
+      </svg>
+      <span>Music Box</span>
+    </a>
+    <nav class="main-nav">
+      <ul class="site-list">
+        <li class="site-list-item">
+          <a class="site-list-link">
+            <span data-hover="Главная" class="site-list-text">Главная</span>
+          </a>
+        </li>
+        <li class="site-list-item">
+          <a class="site-list-link" href="#">
+            <span data-hover="Каталог" class="site-list-text">Каталог</span>
+          </a>
+        </li>
+        <li class="site-list-item">
+          <a class="site-list-link" href="artist.html">
+            <span data-hover="Исполнители" class="site-list-text">Исполнители</span>
+          </a>
+        </li>
+        <li class="site-list-item">
+          <a class="site-list-link" href="#">
+            <span data-hover="Контакты" class="site-list-text">Контакты</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <form method="POST" action="#">
+      <label class="visually-hidden" for="search">Поиск по сайту</label>
+      <input type="search" name="search-field" id="search" placeholder="Поиск">
+      <button class="visually-hidden" type="submit">Поиск</button>
+    </form>
+  </header>
 
+  <footer class="page-footer">
+    <div class="page-footer-item">
+      <h2>О нас</h2>
+      <ul>
+        <li><a href="#">История компании</a></li>
+        <li><a href="#">Карьера</a></li>
+        <li><a href="#">Особенности</a></li>
+        <li><a href="#">Пресса</a></li>
+      </ul>
+    </div>
+    <div class="page-footer-item">
+      <h2>Поддержка</h2>
+      <ul>
+        <li><a href="#">База знаний</a></li>
+        <li><a href="#">Тарифы</a></li>
+        <li><a href="#">Мобильное приложение</a></li>
+        <li><a href="#">Условия использования</a></li>
+      </ul>
+    </div>
+    <div class="page-footer-item">
+      <h2>Контакты</h2>
+      <a href="mailto:hello@music.box">hello@music.box</a>
+      <address>Russia, Moscow. Music Box studio</address>
+      <a href="tel:84999999999">+ 7 499 999 99 99</a>
+    </div>
+    <div class="page-footer-item">
+      <h2>Подписывайтесь</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <span class="visually-hidden">Наш Google+</span>
+            <img class="social-icon" src="images/google.png" width="26" height="17" alt="Наш Google+">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <span class="visually-hidden">Наш Твитер</span>
+            <img class="social-icon" src="images/twitter.png" width="22" height="19" alt="Наш Твитер">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <span class="visually-hidden">Наш Фейсбук</span>
+            <img class="social-icon" src="images/facebook.png" width="12" height="20" alt="Наш Фейсбук">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <span class="visually-hidden">Наш Инстаграм</span>
+            <img class="social-icon" src="images/instagram.png" width="19" height="20" alt="Наш Инстаграм">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer-bottom">
+      <ul>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Обслуживание</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

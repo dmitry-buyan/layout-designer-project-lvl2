@@ -4,11 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Портал «Music Box» | Dmitry Buyan</title>
-
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Портал «Music Box» - Артисты | Dmitry Buyan</title>
+    <link rel="preload" href="fonts/Roboto-Bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="inner">
+  <div style="display: none;">
+    <include src="build/images/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <h1 class="visually-hidden">Популярные исполнители на портале Music Box</h1>
+    <div class="container px-20">
+      <a class="logo" href="index.html">
+        <svg class="social-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+          <use xlink:href="#logo"></use>
+        </svg>
+        <span>Music Box</span>
+      </a>
+      <nav class="main-nav">
+        <ul class="site-list">
+          <li class="site-list-item">
+            <a class="site-list-link" href="index.html">
+              <span data-hover="Главная" class="site-list-text">Главная</span>
+            </a>
+          </li>
+          <li class="site-list-item">
+            <a class="site-list-link" href="#">
+              <span data-hover="Каталог" class="site-list-text">Каталог</span>
+            </a>
+          </li>
+          <li class="site-list-item">
+            <a class="site-list-link">
+              <span data-hover="Исполнители" class="site-list-text">Исполнители</span>
+            </a>
+          </li>
+          <li class="site-list-item">
+            <a class="site-list-link" href="#">
+              <span data-hover="Контакты" class="site-list-text">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <form method="POST" action="#">
+        <label class="visually-hidden" for="search">Поиск по сайту</label>
+        <input type="search" name="search-field" id="search" placeholder="Поиск">
+        <button class="visually-hidden" type="submit">Поиск</button>
+      </form>
+    </div>
+  </header>
 
+  <main>
+    <div class="container px-20">
+      <section class="similar-artists pt-100 mb-100" id="page-similar">
+        <h3 class="title full-width my-0 mb-23 uppercase">Похожие исполнители</h3>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/aha.png" width="137" height="137" alt="Исполнители группы A-ha">
+          <div class="similar-info">
+            <h4 class="title my-0">A-Ha</h4>
+            <p class="my-0"><span class="similar-count">417 086</span> поклонников</p>
+          </div>
+        </div>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/tears-for-fears.png" width="137" height="137" alt="Исполнители группы Tears For Fears">
+          <div class="similar-info">
+            <h4 class="title my-0">Tears For Fears</h4>
+            <p class="my-0"><span class="similar-count">434 086</span> поклонников</p>
+          </div>
+        </div>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/duran.png" width="137" height="137" alt="Исполнители группы Duran Duran">
+          <div class="similar-info">
+            <h4 class="title my-0">Duran Duran</h4>
+            <p class="my-0"><span class="similar-count">631 071</span> поклонников</p>
+          </div>
+        </div>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/jack-savoretti.png" width="137" height="137" alt="Изображение исполнителя Jack Savoretti">
+          <div class="similar-info">
+            <h4 class="title my-0">Jack Savoretti</h4>
+            <p class="my-0"><span class="similar-count">26 857</span> поклонников</p>
+          </div>
+        </div>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/keane.png" width="137" height="137" alt="Исполнители группы Keane">
+          <div class="similar-info">
+            <h4 class="title my-0">Keane</h4>
+            <p class="my-0"><span class="similar-count">1 704 358</span> поклонников</p>
+          </div>
+        </div>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/frank-sinatra.png" width="137" height="137" alt="Изображение исполнителя Frank Sinatra">
+          <div class="similar-info">
+            <h4 class="title my-0">Frank Sinatra</h4>
+            <p class="my-0"><span class="similar-count">1 653 882</span> поклонников</p>
+          </div>
+        </div>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/paul-young.png" width="137" height="137" alt="Изображение исполнителя Paul Young">
+          <div class="similar-info">
+            <h4 class="title my-0">Paul Young</h4>
+            <p class="my-0"><span class="similar-count">50 329</span> поклонников</p>
+          </div>
+        </div>
+        <div class="similar-item">
+          <img class="img similar-img" src="images/chris-rea.png" width="137" height="137" alt="Изображение исполнителя Chris Rea">
+          <div class="similar-info">
+            <h4 class="title my-0">Chris Rea</h4>
+            <p class="my-0"><span class="similar-count">73 351</span> поклонников</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container px-20">
+      <div class="page-footer-item">
+        <h2>О нас</h2>
+        <ul>
+          <li><a href="#">История компании</a></li>
+          <li><a href="#">Карьера</a></li>
+          <li><a href="#">Особенности</a></li>
+          <li><a href="#">Пресса</a></li>
+        </ul>
+      </div>
+      <div class="page-footer-item">
+        <h2>Поддержка</h2>
+        <ul>
+          <li><a href="#">База знаний</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Мобильное приложение</a></li>
+          <li><a href="#">Условия использования</a></li>
+        </ul>
+      </div>
+      <div class="page-footer-item">
+        <h2>Контакты</h2>
+        <a href="mailto:hello@music.box">hello@music.box</a>
+        <address>Russia, Moscow. Music Box studio</address>
+        <a href="tel:84999999999">+ 7 499 999 99 99</a>
+      </div>
+      <div class="page-footer-item">
+        <h2>Подписывайтесь</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Google+</span>
+              <img class="social-icon" src="images/google.png" width="26" height="17" alt="Наш Google+">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Твитер</span>
+              <img class="social-icon" src="images/twitter.png" width="22" height="19" alt="Наш Твитер">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Фейсбук</span>
+              <img class="social-icon" src="images/facebook.png" width="12" height="20" alt="Наш Фейсбук">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Инстаграм</span>
+              <img class="social-icon" src="images/instagram.png" width="19" height="20" alt="Наш Инстаграм">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer-bottom">
+        <ul>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Обслуживание</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

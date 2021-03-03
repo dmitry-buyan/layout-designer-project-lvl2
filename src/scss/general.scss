@@ -1,0 +1,57 @@
+body {
+  min-width: $mobile-width;
+
+  color: $color-gray;
+  font-weight: $font-normal;
+  font-size: $font-size;
+
+  font-family: $font-family;
+  line-height: $line-height;
+
+  background-color: $color-blackcurrent;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &.main {
+    background-image: url("../images/banner.png");
+  }
+
+  &.inner {
+    background-image: url("../images/morten-harket.png");
+  }
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.container {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+  }
+}

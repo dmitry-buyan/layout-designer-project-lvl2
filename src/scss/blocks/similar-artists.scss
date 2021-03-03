@@ -1,0 +1,16 @@
+.similar-artists {
+  display: grid;
+  grid-row-gap: 25px;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: $desktop-width) {
+  .similar-artists {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .similar-artists > .title {
+    font-size: $title-size-desktop;
+  }
+}

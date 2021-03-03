@@ -1,0 +1,20 @@
+.similar-item {
+  width: 137px;
+
+  text-align: center;
+}
+
+.similar-img {
+  margin-bottom: 18px;
+}
+
+@media (min-width: $desktop-width) {
+  .similar-item {
+    width: 250px;
+  }
+
+  .similar-img {
+    width: inherit;
+    height: auto;
+  }
+}
