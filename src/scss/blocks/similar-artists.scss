@@ -5,12 +5,12 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-viewport) {
   .similar-artists {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .similar-artists > .title {
+  .similar-artists-title {
     font-size: $title-size-desktop;
   }
 }

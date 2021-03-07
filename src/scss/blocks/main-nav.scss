@@ -1,0 +1,28 @@
+.main-nav-link {
+  color: $gray;
+  font-weight: $font-bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav-link-active {
+  color: $white;
+}
+
+@media (min-width: $desktop-viewport) {
+  .main-nav {
+    max-width: 745px;
+    margin-bottom: 0;
+    margin-left: 88px;
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav-item {
+    margin-right: 24px;
+  }
+}

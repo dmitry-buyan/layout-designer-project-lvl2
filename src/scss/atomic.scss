@@ -1,3 +1,15 @@
+.relative {
+  position: relative;
+}
+
+.half-left {
+  left: 50%;
+}
+
+.translate-left-50 {
+  transform: translateX(-50%);
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -11,9 +23,16 @@
   margin-bottom: $mobile-margin;
 }
 
-.px-20 {
-  padding-right: $mobile-padding;
-  padding-left: $mobile-padding;
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
 }
 
 .pt-100 {
@@ -26,4 +45,28 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: $font-size;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.lh-150 {
+  line-height: $line-height;
+}
+
+.white {
+  color: $white;
+}
+
+.text-center {
+  text-align: center;
 }

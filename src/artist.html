@@ -10,108 +10,107 @@
     <link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="inner">
+<body class="relative">
   <div style="display: none;">
     <include src="build/images/sprite.svg"></include>
   </div>
-  <header class="page-header">
+  <header class="page-header container">
     <h1 class="visually-hidden">Популярные исполнители на портале Music Box</h1>
-    <div class="container px-20">
-      <a class="logo" href="index.html">
-        <svg class="social-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-          <use xlink:href="#logo"></use>
-        </svg>
-        <span>Music Box</span>
-      </a>
-      <nav class="main-nav">
-        <ul class="site-list">
-          <li class="site-list-item">
-            <a class="site-list-link" href="index.html">
-              <span data-hover="Главная" class="site-list-text">Главная</span>
-            </a>
-          </li>
-          <li class="site-list-item">
-            <a class="site-list-link" href="#">
-              <span data-hover="Каталог" class="site-list-text">Каталог</span>
-            </a>
-          </li>
-          <li class="site-list-item">
-            <a class="site-list-link">
-              <span data-hover="Исполнители" class="site-list-text">Исполнители</span>
-            </a>
-          </li>
-          <li class="site-list-item">
-            <a class="site-list-link" href="#">
-              <span data-hover="Контакты" class="site-list-text">Контакты</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <form method="POST" action="#">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input type="search" name="search-field" id="search" placeholder="Поиск">
-        <button class="visually-hidden" type="submit">Поиск</button>
-      </form>
-    </div>
+    <a class="logo" href="index.html">
+      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+        <use xlink:href="#logo"></use>
+      </svg>
+      <span class="ml-16 uppercase">Music Box</span>
+    </a>
+
+    <nav class="main-nav mb-18">
+      <ul class="main-nav-list list-reset">
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="index.html">
+            <span data-hover="Главная" class="site-list-text">Главная</span>
+          </a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">
+            <span data-hover="Каталог" class="site-list-text">Каталог</span>
+          </a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link main-nav-link-active">
+            <span data-hover="Исполнители" class="site-list-text">Исполнители</span>
+          </a>
+        </li>
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">
+            <span data-hover="Контакты" class="site-list-text">Контакты</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <form class="search-form" method="POST" action="#">
+      <label class="visually-hidden" for="search">Поиск по сайту</label>
+      <input class="search-field" type="search" name="search" id="search" placeholder="ПОИСК...">
+      <button class="visually-hidden" type="submit">Поиск</button>
+    </form>
   </header>
 
   <main>
-    <div class="container px-20">
+    <div class="container">
       <section class="similar-artists pt-100 mb-100" id="page-similar">
-        <h3 class="title full-width my-0 mb-23 uppercase">Похожие исполнители</h3>
+        <h3 class="similar-artists-title white full-width my-0 mb-23 uppercase">Похожие исполнители</h3>
         <div class="similar-item">
           <img class="img similar-img" src="images/aha.png" width="137" height="137" alt="Исполнители группы A-ha">
           <div class="similar-info">
-            <h4 class="title my-0">A-Ha</h4>
+            <h4 class="white my-0">A-Ha</h4>
             <p class="my-0"><span class="similar-count">417 086</span> поклонников</p>
           </div>
         </div>
         <div class="similar-item">
           <img class="img similar-img" src="images/tears-for-fears.png" width="137" height="137" alt="Исполнители группы Tears For Fears">
           <div class="similar-info">
-            <h4 class="title my-0">Tears For Fears</h4>
+            <h4 class="white my-0">Tears For Fears</h4>
             <p class="my-0"><span class="similar-count">434 086</span> поклонников</p>
           </div>
         </div>
         <div class="similar-item">
           <img class="img similar-img" src="images/duran.png" width="137" height="137" alt="Исполнители группы Duran Duran">
           <div class="similar-info">
-            <h4 class="title my-0">Duran Duran</h4>
+            <h4 class="white my-0">Duran Duran</h4>
             <p class="my-0"><span class="similar-count">631 071</span> поклонников</p>
           </div>
         </div>
         <div class="similar-item">
           <img class="img similar-img" src="images/jack-savoretti.png" width="137" height="137" alt="Изображение исполнителя Jack Savoretti">
           <div class="similar-info">
-            <h4 class="title my-0">Jack Savoretti</h4>
+            <h4 class="white my-0">Jack Savoretti</h4>
             <p class="my-0"><span class="similar-count">26 857</span> поклонников</p>
           </div>
         </div>
         <div class="similar-item">
           <img class="img similar-img" src="images/keane.png" width="137" height="137" alt="Исполнители группы Keane">
           <div class="similar-info">
-            <h4 class="title my-0">Keane</h4>
+            <h4 class="whtie my-0">Keane</h4>
             <p class="my-0"><span class="similar-count">1 704 358</span> поклонников</p>
           </div>
         </div>
         <div class="similar-item">
           <img class="img similar-img" src="images/frank-sinatra.png" width="137" height="137" alt="Изображение исполнителя Frank Sinatra">
           <div class="similar-info">
-            <h4 class="title my-0">Frank Sinatra</h4>
+            <h4 class="white my-0">Frank Sinatra</h4>
             <p class="my-0"><span class="similar-count">1 653 882</span> поклонников</p>
           </div>
         </div>
         <div class="similar-item">
           <img class="img similar-img" src="images/paul-young.png" width="137" height="137" alt="Изображение исполнителя Paul Young">
           <div class="similar-info">
-            <h4 class="title my-0">Paul Young</h4>
+            <h4 class="white my-0">Paul Young</h4>
             <p class="my-0"><span class="similar-count">50 329</span> поклонников</p>
           </div>
         </div>
         <div class="similar-item">
           <img class="img similar-img" src="images/chris-rea.png" width="137" height="137" alt="Изображение исполнителя Chris Rea">
           <div class="similar-info">
-            <h4 class="title my-0">Chris Rea</h4>
+            <h4 class="white my-0">Chris Rea</h4>
             <p class="my-0"><span class="similar-count">73 351</span> поклонников</p>
           </div>
         </div>
@@ -120,7 +119,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container px-20">
+    <div class="container">
       <div class="page-footer-item">
         <h2>О нас</h2>
         <ul>

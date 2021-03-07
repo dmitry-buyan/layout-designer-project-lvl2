@@ -1,24 +1,14 @@
 body {
   min-width: $mobile-width;
 
-  color: $color-gray;
+  color: $gray;
   font-weight: $font-normal;
   font-size: $font-size;
 
   font-family: $font-family;
   line-height: $line-height;
 
-  background-color: $color-blackcurrent;
-  background-repeat: no-repeat;
-  background-position: top center;
-
-  &.main {
-    background-image: url("../images/banner.png");
-  }
-
-  &.inner {
-    background-image: url("../images/morten-harket.png");
-  }
+  background-color: $blackcurrent;
 }
 
 .img {
@@ -44,14 +34,25 @@ body {
   clip-path: inset(100%);
 }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.2em;
+
+  list-style: none;
+}
+
 .container {
   box-sizing: border-box;
   width: $mobile-width;
   margin: 0 auto;
+  padding: 0 $mobile-padding;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-viewport) {
   .container {
     width: $desktop-width;
+    padding: 0;
   }
 }
