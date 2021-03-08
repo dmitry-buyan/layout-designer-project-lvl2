@@ -1,0 +1,20 @@
+.search-field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+
+  color: $white;
+  font-size: 13px;
+  line-height: 1.2em;
+
+  background-color: $dark;
+}
+
+@media (min-width: $desktop-viewport) {
+  .search-form {
+    width: 248px;
+    margin-left: auto;
+  }
+}

@@ -6,13 +6,17 @@ $title-size-desktop: 38px;
 $line-height: 1.5em;
 $font-family: "Roboto", "Arial", sans-serif;
 
-$color-white: #fff;
-$color-gray: #e0e0e0;
-$color-darkgray: #cacaca;
-$color-blackcurrent: #08020d;
+$white: #fff;
+$gray: #e0e0e0;
+$dark: #3c3b3d;
+$darkgray: #cacaca;
+$blackcurrent: #08020d;
+$green: #34c176;
+
+$desktop-viewport: 1240px;
 
 $mobile-width: 414px;
-$desktop-width: 1240px;
+$desktop-width: 1200px;
 
 $mobile-padding: 20px;
 $mobile-margin: 23px;

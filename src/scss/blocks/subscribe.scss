@@ -1,0 +1,53 @@
+.subscribe {
+  padding: 248px 0 200px;
+
+  color: $white;
+
+  background-image: url(../../images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.subscribe-field {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 270px;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  padding: 0 20px;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+
+  color: $white;
+
+  background-color: transparent;
+  filter: drop-shadow (0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-width: $desktop-viewport) {
+  .subscribe {
+    padding-top: 200px;
+  }
+
+  .subscribe-title {
+    font-size: 60px;
+  }
+
+  .subscribe-subtitle {
+    margin-bottom: 32px;
+
+    font-size: 38px;
+  }
+
+  .subscribe-field {
+    width: 45%;
+  }
+}

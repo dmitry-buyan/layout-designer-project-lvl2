@@ -10,110 +10,124 @@
     <link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="main">
-  <div style="display: none;">
-    <include src="build/images/sprite.svg"></include>
-  </div>
-  <header class="page-header">
-    <a class="main-nav-logo">
-      <svg class="social-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-        <use xlink:href="#logo"></use>
-      </svg>
-      <span>Music Box</span>
+<body class="relative">
+  <header class="page-header container">
+    <a class="logo">
+      <svg width="24" height="24" viewbox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2 2)" stroke="#1565C0" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><circle fill="#E2F3FB" cx="50" cy="50" r="50"></circle><path fill="#FFF" d="M70.966 19.242v15.247L34.99 40.511V25.289z"></path><ellipse fill="#FFF" cx="63.471" cy="66.44" rx="7.495" ry="5.93"></ellipse><ellipse fill="#FFF" cx="27.495" cy="72.37" rx="7.495" ry="5.93"></ellipse><path d="M34.99 40.643V72.37M70.966 35.011v31.434" fill="#E2F3FB"></path></g></svg>
+      <span class="ml-16 uppercase">Music Box</span>
     </a>
-    <nav class="main-nav">
-      <ul class="site-list">
-        <li class="site-list-item">
-          <a class="site-list-link">
+    <nav class="main-nav mb-18">
+      <ul class="main-nav-list list-reset">
+        <li class="main-nav-item">
+          <a class="main-nav-link main-nav-link-active">
             <span data-hover="Главная" class="site-list-text">Главная</span>
           </a>
         </li>
-        <li class="site-list-item">
-          <a class="site-list-link" href="#">
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">
             <span data-hover="Каталог" class="site-list-text">Каталог</span>
           </a>
         </li>
-        <li class="site-list-item">
-          <a class="site-list-link" href="artist.html">
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="artist.html">
             <span data-hover="Исполнители" class="site-list-text">Исполнители</span>
           </a>
         </li>
-        <li class="site-list-item">
-          <a class="site-list-link" href="#">
+        <li class="main-nav-item">
+          <a class="main-nav-link" href="#">
             <span data-hover="Контакты" class="site-list-text">Контакты</span>
           </a>
         </li>
       </ul>
     </nav>
-    <form method="POST" action="#">
+    <form class="search-form" method="POST" action="#">
       <label class="visually-hidden" for="search">Поиск по сайту</label>
-      <input type="search" name="search-field" id="search" placeholder="Поиск">
+      <input class="search-field" type="search" name="search" id="search" placeholder="ПОИСК...">
       <button class="visually-hidden" type="submit">Поиск</button>
     </form>
   </header>
 
+  <div class="subscribe" id="page-description">
+    <div class="container text-center">
+      <h1 class="subscribe-title my-0 fs-30 uppercase lh-150">Онлайн музыка где угодно</h1>
+      <h2 class="subscribe-subtitle my-0 mb-16 fs-18 uppercase">Без ограничений</h2>
+      <p class="my-0 mb-16 fs-16 text-center lh-150">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+      <form class="subscribe-form" action="#" method="POST">
+        <label class="visually-hidden" for="username-field">Имя</label>
+        <input class="subscribe-field" id="username-field" type="text" name="username" placeholder="Имя">
+
+        <label class="visually-hidden" for="email-field">Email</label>
+        <input class="subscribe-field" id="email-field" type="text" name="email" placeholder="Email">
+
+        <button class="btn btn-subscribe" type="submit">Получить доступ</button>
+      </form>
+    </div>
+  </div>
+
   <footer class="page-footer">
-    <div class="page-footer-item">
-      <h2>О нас</h2>
-      <ul>
-        <li><a href="#">История компании</a></li>
-        <li><a href="#">Карьера</a></li>
-        <li><a href="#">Особенности</a></li>
-        <li><a href="#">Пресса</a></li>
-      </ul>
-    </div>
-    <div class="page-footer-item">
-      <h2>Поддержка</h2>
-      <ul>
-        <li><a href="#">База знаний</a></li>
-        <li><a href="#">Тарифы</a></li>
-        <li><a href="#">Мобильное приложение</a></li>
-        <li><a href="#">Условия использования</a></li>
-      </ul>
-    </div>
-    <div class="page-footer-item">
-      <h2>Контакты</h2>
-      <a href="mailto:hello@music.box">hello@music.box</a>
-      <address>Russia, Moscow. Music Box studio</address>
-      <a href="tel:84999999999">+ 7 499 999 99 99</a>
-    </div>
-    <div class="page-footer-item">
-      <h2>Подписывайтесь</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="#" class="social-link">
-            <span class="visually-hidden">Наш Google+</span>
-            <img class="social-icon" src="images/google.png" width="26" height="17" alt="Наш Google+">
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="#" class="social-link">
-            <span class="visually-hidden">Наш Твитер</span>
-            <img class="social-icon" src="images/twitter.png" width="22" height="19" alt="Наш Твитер">
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="#" class="social-link">
-            <span class="visually-hidden">Наш Фейсбук</span>
-            <img class="social-icon" src="images/facebook.png" width="12" height="20" alt="Наш Фейсбук">
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="#" class="social-link">
-            <span class="visually-hidden">Наш Инстаграм</span>
-            <img class="social-icon" src="images/instagram.png" width="19" height="20" alt="Наш Инстаграм">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer-bottom">
-      <ul>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Обслуживание</a></li>
-        <li><a href="#">Блог</a></li>
-        <li><a href="#">Поддержка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+    <div class="container">
+      <div class="page-footer-item">
+        <h2>О нас</h2>
+        <ul>
+          <li><a href="#">История компании</a></li>
+          <li><a href="#">Карьера</a></li>
+          <li><a href="#">Особенности</a></li>
+          <li><a href="#">Пресса</a></li>
+        </ul>
+      </div>
+      <div class="page-footer-item">
+        <h2>Поддержка</h2>
+        <ul>
+          <li><a href="#">База знаний</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Мобильное приложение</a></li>
+          <li><a href="#">Условия использования</a></li>
+        </ul>
+      </div>
+      <div class="page-footer-item">
+        <h2>Контакты</h2>
+        <a href="mailto:hello@music.box">hello@music.box</a>
+        <address>Russia, Moscow. Music Box studio</address>
+        <a href="tel:84999999999">+ 7 499 999 99 99</a>
+      </div>
+      <div class="page-footer-item">
+        <h2>Подписывайтесь</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Google+</span>
+              <img class="social-icon" src="images/google.png" width="26" height="17" alt="Наш Google+">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Твитер</span>
+              <img class="social-icon" src="images/twitter.png" width="22" height="19" alt="Наш Твитер">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Фейсбук</span>
+              <img class="social-icon" src="images/facebook.png" width="12" height="20" alt="Наш Фейсбук">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <span class="visually-hidden">Наш Инстаграм</span>
+              <img class="social-icon" src="images/instagram.png" width="19" height="20" alt="Наш Инстаграм">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer-bottom">
+        <ul>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Обслуживание</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
