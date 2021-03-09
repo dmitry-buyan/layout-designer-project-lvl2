@@ -1,0 +1,55 @@
+.pricing-item {
+  box-sizing: border-box;
+  min-height: 595px;
+  padding: 18px 1.5rem;
+  border-radius: 1rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-item:last-of-type {
+  margin-bottom: 40px;
+}
+
+.pricing-item-free {
+  background-image: url(../../images/subscribe_1.png);
+}
+
+.pricing-item-standard {
+  background-image: url(../../images/subscribe_2.png);
+}
+
+.pricing-item-premium {
+  background-image: url(../../images/subscribe_3.png);
+}
+
+.pricing-value {
+  margin-bottom: 45px;
+
+  font-size: 64px;
+  line-height: 1em;
+}
+
+.pricing-footer {
+  margin-bottom: 45px;
+
+  font-size: 13px;
+}
+
+@media (min-width: $desktop-viewport) {
+  .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pricing-item {
+    width: 30.5%;
+    height: 100%;
+    margin-bottom: 40px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
