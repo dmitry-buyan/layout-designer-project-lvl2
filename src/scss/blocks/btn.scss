@@ -6,6 +6,8 @@
   border: none;
   border-radius: 5px;
 
+  line-height: 1.5em;
+
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -17,8 +19,9 @@
 
 .btn-subscribe {
   color: $white;
-  font-size: 0.74em;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
 
   background-color: $green;
 }
@@ -29,5 +32,13 @@
 
   color: $white;
   font-size: 16px;
-  line-height: 1.5em;
+}
+
+.btn-news {
+  width: auto;
+  padding: 16px 30px;
+  border: 1px solid $darkgray;
+
+  color: $darkgray;
+  font-size: 13px;
 }

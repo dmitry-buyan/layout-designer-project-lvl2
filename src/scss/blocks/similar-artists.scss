@@ -5,6 +5,16 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.similar-item {
+  width: 137px;
+
+  text-align: center;
+}
+
+.similar-img {
+  margin-bottom: 18px;
+}
+
 @media (min-width: $desktop-viewport) {
   .similar-artists {
     grid-template-columns: repeat(4, 1fr);
@@ -12,5 +22,14 @@
 
   .similar-artists-title {
     font-size: $title-size-desktop;
+  }
+
+  .similar-item {
+    width: 250px;
+  }
+
+  .similar-img {
+    width: inherit;
+    height: auto;
   }
 }
